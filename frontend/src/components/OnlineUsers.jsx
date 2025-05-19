@@ -13,7 +13,7 @@ const OnlineUsers = () => {
     useEffect(() => {
         const fetchUsers = async () => {
             try {
-                const response = await axios.get(${BASE_URL}/api/v1/user/all-users, {
+                const response = await axios.get(`${BASE_URL}/api/v1/user/all-users`, {
                     withCredentials: true
                 });
                 setAllUsers(response.data);
