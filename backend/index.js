@@ -47,6 +47,10 @@ app.use(cors(corsOption));
 // routes
 app.use("/api/v1/user",userRoute); 
 app.use("/api/v1/message",messageRoute);
+
+app.get('/hello' , (req, res)=>{
+    res.send("hello");
+})
  
 server.listen(PORT, ()=>{
     connectDB();
