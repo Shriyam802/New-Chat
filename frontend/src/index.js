@@ -11,7 +11,7 @@ import { persistStore } from 'redux-persist';
 let persistor = persistStore(store);
 
 // Updated to match backend port
-export const BASE_URL="new-chat-ebon.vercel.app"
+export const BASE_URL="https://new-chat-ebon.vercel.app"
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
