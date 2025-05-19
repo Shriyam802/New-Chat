@@ -24,16 +24,7 @@ app.use(cookieParser());
 const corsOption = {
     origin: function (origin, callback) {
         const allowedOrigins = [
-            'http://localhost:3000', 
-            'http://localhost:3001', 
-            'http://localhost:3002', 
-            'http://localhost:3003', 
-            'http://localhost:3004', 
-            'http://localhost:3007',
-            'http://localhost:8080',
-            'http://localhost:8081',
-            'http://localhost:8082',
-            'http://localhost:8083',
+           new-chat-frontend2.vercel.app,
             undefined // Allow undefined origin (for local development)
         ];
         
