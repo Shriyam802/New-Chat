@@ -11,7 +11,7 @@ const app = express();
 const server = http.createServer(app);
 const io = new Server(server, {
     cors:{
-        origin:['http://localhost:3000', 'http://localhost:3004', 'http://localhost:3007', 'http://localhost:8080'],
+        origin:['https://new-chat-frontend2.vercel.app'],
         methods:['GET', 'POST'],
         credentials: true
     },
