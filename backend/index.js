@@ -24,7 +24,7 @@ app.use(cookieParser());
 const corsOption = {
     origin: function (origin, callback) {
         const allowedOrigins = [
-           new-chat-frontend2.vercel.app,
+           "new-chat-frontend2.vercel.app",
             undefined // Allow undefined origin (for local development)
         ];
         
