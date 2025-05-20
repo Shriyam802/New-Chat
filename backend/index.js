@@ -25,7 +25,7 @@ const corsOption = {
     origin: function (origin, callback) {
         const allowedOrigins = [
            "https://new-chat-frontend2.vercel.app",
-            "https://new-chat-veam.vercel.app/signup",
+            "https://new-chat-veam.vercel.app",
             undefined // Allow undefined origin (for local development)
         ];
         
