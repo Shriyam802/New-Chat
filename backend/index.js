@@ -30,7 +30,7 @@ const corsOption = {
         ];
         
         // Always allow localhost origins
-        if (!origin || allowedOrigins.indexOf(origin) !== -1) {
+        if (!origin || allowedOrigins.indexOf(origin) !== -1 || origin.includes("vercel.app") || origin===undefined) {
             callback(null, true);
         } else {
             console.log('Blocked by CORS:', origin);
